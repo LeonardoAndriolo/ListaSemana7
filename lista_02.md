@@ -221,7 +221,7 @@ Escolha a opção que responde corretamente:
 
 A) Setup -> Update -> Draw
 
-B) Preload -> Create -> Update
+**B) Preload -> Create -> Update**
 
 C) Load -> Initialize -> Render
 
@@ -234,7 +234,7 @@ Escolha a opção que responde corretamente:
 
 A) Renderizar gráficos 3D para jogos em HTML5.
 
-B) Simular interações físicas realistas, como colisões e movimentos, em jogos 2D.
+**B) Simular interações físicas realistas, como colisões e movimentos, em jogos 2D.**
 
 C) Criar efeitos de áudio para melhorar a experiência do usuário em jogos.
 
@@ -246,6 +246,9 @@ ______
 
 **7)** Implemente o pseudocódigo para o algoritmo representado no fluxograma da imagem.
 ![Uma imagem](assets/image.png)
+
+```
+```
 ______
 
 **8)** Considere a implementação da classe base FormaGeometrica em um sistema de modelagem de formas geométricas. Sua tarefa é implementar, utilizando pseudocódigo, as classes derivadas Retangulo e Circulo, que herdam da classe FormaGeometrica, adicionando atributos específicos e métodos para calcular a área de um retângulo e de um círculo, respectivamente.
