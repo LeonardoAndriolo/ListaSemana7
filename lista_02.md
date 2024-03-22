@@ -3,7 +3,7 @@
 - Faça uma cópia deste arquivo .md para um repositório próprio
 - Resolva as 6 questões objetivas assinalando a alternativa correta
 - Resolva as 4 questões dissertativas escrevendo no próprio arquivo .md
-  - lembre-se de utilizar as estruturas de código como ``esta aqui com ` `` ou
+- Lembre-se de utilizar as estruturas de código como ``esta aqui com `` ou
 ```javascript
 //esta aqui com ```
 let a = "olá"
@@ -13,7 +13,7 @@ print(a)
 - Resolva as questões com uso do Visual Studio Code ou ambiente similar.
 - Teste seus códigos antes de trazer a resposta para cá.
 - Cuidado com ChatGPT e afins: entregar algo só para ganhar nota não faz você aprender e ficar mais inteligente. Não seja dependente da máquina! (E não se envolva em plágio!)
-- ao final, publique seu arquivo lista_02.md com as respostas em seu repositório, e envie o link pela Adalove. 
+- Ao final, publique seu arquivo lista_02.md com as respostas em seu repositório, e envie o link pela Adalove. 
 
 # Questões objetivas
 
@@ -42,7 +42,7 @@ Qual das seguintes alternativas melhor descreve o que o código faz?
 
 A) O código avalia a expressão booleana, imprime o resultado `false`, calcula a soma dos números de 1 a 5 e imprime o resultado no console.
 
-B) O código avalia a expressão booleana, imprime o resultado `true`, calcula a soma dos números de 1 a 5 e imprime o resultado no console.
+**B) O código avalia a expressão booleana, imprime o resultado `true`, calcula a soma dos números de 1 a 5 e imprime o resultado no console.**
 
 C) O código avalia a expressão booleana, imprime o resultado `true` e verifica se o número 5 está presente na lista de números.
 
@@ -57,7 +57,8 @@ ______
 //Versão 1 da função que calcula orçamento
 function calculaOrcamento(){
 
-    var gastos = [1800, 950, 620, 38];
+    // var gastos = [1800, 950, 620, 38];
+    var gastos = [3600, 950, 620, 38];
     var totalGastos = gastos[0];
     var salario = 3500;
     var saldo = 0; 
@@ -82,7 +83,8 @@ function calculaOrcamento(){
 //Versão 2 da função que calcula orçamento
 function calculaOrcamento2(){
 
-    var gastos = [1800, 950, 620, 38];
+    // var gastos = [1800, 950, 620, 38];
+    var gastos = [3600, 950, 620, 38];
     var totalGastos = gastos[0];
     var salario = 3500;
     var statusSaldo =  'positivo';
@@ -106,7 +108,7 @@ Escolha a opção que responde corretamente qual seria a saída após a execuç�
 
 A) As funções calcularOrcamento() e calcularOrcamento2() teriam a mesma saída: 'Seu saldo é negativo de -1050.'
 
-B) A saída de calcularOrcamento() seria: 'Seu saldo é negativo de -1050.' e a de calcularOrcamento2() seria: 'Seu saldo é negativo de -100.'
+**B) A saída de calcularOrcamento() seria: 'Seu saldo é negativo de -1050.' e a de calcularOrcamento2() seria: 'Seu saldo é negativo de -100.'**
 
 C) A saída de calcularOrcamento() seria: 'Seu saldo é negativo de -100.' e a de calcularOrcamento2() seria: 'Seu saldo é negativo de -1050.'
 
@@ -137,7 +139,7 @@ B) O código verifica se o número é par ou ímpar. Se for par, exibe a mensage
 
 C) O código verifica se o número é par, ímpar ou divisível por 3. Se for par, exibe a mensagem "O número é par!". Se for divisível por 3, exibe a mensagem "O número é divisível por 3!". Se for ímpar, exibe a mensagem "O número é ímpar e não é divisível por 3!".
 
-D) O código verifica se o número é par, se é divisível por 3 ou se é ímpar. Se for par, exibe a mensagem "O número é par!". Se for divisível por 3 (e não for par), exibe a mensagem "O número é divisível por 3!". Se for ímpar (e não for divisível por 3), exibe a mensagem "O número é ímpar e não é divisível por 3!".
+**D) O código verifica se o número é par, se é divisível por 3 ou se é ímpar. Se for par, exibe a mensagem "O número é par!". Se for divisível por 3 (e não for par), exibe a mensagem "O número é divisível por 3!". Se for ímpar (e não for divisível por 3), exibe a mensagem "O número é ímpar e não é divisível por 3!".**
 
 
 ______
@@ -169,49 +171,33 @@ Escolha a opção que responde corretamente:
 
 A)
 Compra 1 aprovada. Saldo restante: 800
-
 Compra 2 aprovada com limite de crédito. Saldo restante: 700
-
 Compra 3 aprovada. Saldo restante: 400
-
 Compra 4 aprovada com limite de crédito. Saldo restante: 0
-
 Compra 5 aprovada. Saldo restante: -200
 
 
 B)
 Compra 1 aprovada. Saldo restante: 800
-
 Compra 2 aprovada com limite de crédito. Saldo restante: 700
-
 Compra 3 aprovada. Saldo restante: 200
-
 Compra 4 negada. Saldo insuficiente e limite de crédito excedido.
-
 Compra 5 negada. Saldo insuficiente e limite de crédito excedido.
 
 
 C)
 Compra 1 aprovada. Saldo restante: 800
-
 Compra 2 aprovada com limite de crédito. Saldo restante: 700
-
 Compra 3 aprovada. Saldo restante: 400
-
 Compra 4 negada. Saldo insuficiente e limite de crédito excedido.
 
 
-D)
-
+**D)
 Compra 1 aprovada. Saldo restante: 800
-
 Compra 2 aprovada. Saldo restante: 0
-
 Compra 3 aprovada com limite de crédito. Saldo restante: 200
-
 Compra 4 negada. Saldo insuficiente e limite de crédito excedido.
-
-Compra 5 negada. Saldo insuficiente e limite de crédito excedido.
+Compra 5 negada. Saldo insuficiente e limite de crédito excedido.**
 
 ______
 
@@ -248,6 +234,16 @@ ______
 ![Uma imagem](assets/image.png)
 
 ```
+algoritmo "VerificaSePodeVotar"
+inteiro idade
+idade <- entrada("Insira sua idade")
+se (idade < 16) então
+    saída("Não pode votar")
+senão se (idade >= 16) && (idade < 18) então
+    saída("Voto facultativo")
+senão
+    saída("Voto obrigatório")
+fim senão
 ```
 ______
 
@@ -265,11 +261,49 @@ Classe FormaGeometrica:
         # Implementação genérica para cálculo de área, a ser sobrescrita pelas subclasses.
 
 ```
+```
+Classe Retangulo herda FormaGeometrica:
+    Atributos:
+        super(cor)
+        - lado
+
+    Método Construtor(cor,lado):
+        Define o valor do atributo cor com o valor passado como parâmetro.
+        Define o valor de atributo lado com o valor passado como parâmetro.
+
+    Método CalcularArea():
+        area <- lado * lado
+        retorna area
+
+```
+```
+Classe Circulo herda FormaGeometrica:
+    Atributos:
+        super(cor)
+        - raio
+
+    Método Construtor(cor,raio):
+        Define o valor do atributo cor com o valor passado como parâmetro.
+        Define o valor de atributo raio com o valor passado como parâmetro.
+
+    Método CalcularArea():
+        area <- 2 * pi * raio
+        retorna area
+```
 
 ______
 
 **9)** Você foi contratado(a) como estagiário(a) da Tesla e está participando do desenvolvimento de um programa para simular o desempenho de um carro elétrico em uma corrida. Seu objetivo é determinar em quantos minutos o carro levará para completar uma determinada distância, levando em consideração uma velocidade inicial e uma taxa de aceleração constante. No entanto, você deseja garantir que o carro não exceda uma velocidade máxima nem que a corrida demore mais do que um tempo máximo. Implemente a lógica dessa simulação em pseudocódigo.
 
+```
+algoritmo "TesteDesempenho"
+inteiro velocidade,velocidadeInicial,aceleração,tempo
+
+// velocidade = velocidadeInicial + (aceleração * tempo)
+// aceleração * tempo = velocidade - velocidadeInicial
+tempo = (velocidade - velocidadeInicial) / aceleração
+se (velocidadeMaxima)
+```
 
 
 ______
