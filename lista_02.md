@@ -42,7 +42,7 @@ Qual das seguintes alternativas melhor descreve o que o código faz?
 
 A) O código avalia a expressão booleana, imprime o resultado `false`, calcula a soma dos números de 1 a 5 e imprime o resultado no console.
 
-**B) O código avalia a expressão booleana, imprime o resultado `true`, calcula a soma dos números de 1 a 5 e imprime o resultado no console.**
+===> **B) O código avalia a expressão booleana, imprime o resultado `true`, calcula a soma dos números de 1 a 5 e imprime o resultado no console.** 
 
 C) O código avalia a expressão booleana, imprime o resultado `true` e verifica se o número 5 está presente na lista de números.
 
@@ -108,7 +108,7 @@ Escolha a opção que responde corretamente qual seria a saída após a execuç�
 
 A) As funções calcularOrcamento() e calcularOrcamento2() teriam a mesma saída: 'Seu saldo é negativo de -1050.'
 
-**B) A saída de calcularOrcamento() seria: 'Seu saldo é negativo de -1050.' e a de calcularOrcamento2() seria: 'Seu saldo é negativo de -100.'**
+===> **B) A saída de calcularOrcamento() seria: 'Seu saldo é negativo de -1050.' e a de calcularOrcamento2() seria: 'Seu saldo é negativo de -100.'**
 
 C) A saída de calcularOrcamento() seria: 'Seu saldo é negativo de -100.' e a de calcularOrcamento2() seria: 'Seu saldo é negativo de -1050.'
 
@@ -139,7 +139,7 @@ B) O código verifica se o número é par ou ímpar. Se for par, exibe a mensage
 
 C) O código verifica se o número é par, ímpar ou divisível por 3. Se for par, exibe a mensagem "O número é par!". Se for divisível por 3, exibe a mensagem "O número é divisível por 3!". Se for ímpar, exibe a mensagem "O número é ímpar e não é divisível por 3!".
 
-**D) O código verifica se o número é par, se é divisível por 3 ou se é ímpar. Se for par, exibe a mensagem "O número é par!". Se for divisível por 3 (e não for par), exibe a mensagem "O número é divisível por 3!". Se for ímpar (e não for divisível por 3), exibe a mensagem "O número é ímpar e não é divisível por 3!".**
+===> **D) O código verifica se o número é par, se é divisível por 3 ou se é ímpar. Se for par, exibe a mensagem "O número é par!". Se for divisível por 3 (e não for par), exibe a mensagem "O número é divisível por 3!". Se for ímpar (e não for divisível por 3), exibe a mensagem "O número é ímpar e não é divisível por 3!".**
 
 
 ______
@@ -192,7 +192,7 @@ Compra 3 aprovada. Saldo restante: 400
 Compra 4 negada. Saldo insuficiente e limite de crédito excedido.
 
 
-**D)
+===> **D)
 Compra 1 aprovada. Saldo restante: 800
 Compra 2 aprovada. Saldo restante: 0
 Compra 3 aprovada com limite de crédito. Saldo restante: 200
@@ -207,7 +207,7 @@ Escolha a opção que responde corretamente:
 
 A) Setup -> Update -> Draw
 
-**B) Preload -> Create -> Update**
+===> **B) Preload -> Create -> Update**
 
 C) Load -> Initialize -> Render
 
@@ -220,7 +220,7 @@ Escolha a opção que responde corretamente:
 
 A) Renderizar gráficos 3D para jogos em HTML5.
 
-**B) Simular interações físicas realistas, como colisões e movimentos, em jogos 2D.**
+===> **B) Simular interações físicas realistas, como colisões e movimentos, em jogos 2D.**
 
 C) Criar efeitos de áudio para melhorar a experiência do usuário em jogos.
 
@@ -235,6 +235,9 @@ ______
 
 ```
 algoritmo "VerificaSePodeVotar"
+
+início
+
 inteiro idade
 idade <- entrada("Insira sua idade")
 se (idade < 16) então
@@ -244,6 +247,8 @@ senão se (idade >= 16) && (idade < 18) então
 senão
     saída("Voto obrigatório")
 fim senão
+
+fim
 ```
 ______
 
@@ -263,28 +268,27 @@ Classe FormaGeometrica:
 ```
 ```
 Classe Retangulo herda FormaGeometrica:
-    Atributos:
-        super(cor)
-        - lado
+    Atributos adicionais:
+        - largura
+        - altura
 
-    Método Construtor(cor,lado):
-        Define o valor do atributo cor com o valor passado como parâmetro.
-        Define o valor de atributo lado com o valor passado como parâmetro.
+    Método Construtor(cor,largura,altura):
+        Chama o construtor da classe base para definir cor
+        Define o valor do atributo largura e altura com o valor passado como parâmetro
 
     Método CalcularArea():
-        area <- lado * lado
+        area <- largura * altura
         retorna area
 
 ```
 ```
 Classe Circulo herda FormaGeometrica:
-    Atributos:
-        super(cor)
+    Atributos adicionais:
         - raio
 
     Método Construtor(cor,raio):
-        Define o valor do atributo cor com o valor passado como parâmetro.
-        Define o valor de atributo raio com o valor passado como parâmetro.
+        Chama o construtor da classe base para definir cor
+        Define o valor de atributo raio com o valor passado como parâmetro
 
     Método CalcularArea():
         area <- 2 * pi * raio
@@ -297,15 +301,27 @@ ______
 
 ```
 algoritmo "TesteDesempenho"
-inteiro velocidade,velocidadeInicial,aceleração,tempo
 
-// velocidade = velocidadeInicial + (aceleração * tempo)
-// aceleração * tempo = velocidade - velocidadeInicial
-tempo = (velocidade - velocidadeInicial) / aceleração
-se (velocidadeMaxima)
+início
+
+número velocidadeInicial, velocidadeMaxima, aceleracao, distanciaCorrida, tempoCorrida, tempoMaximo // Variáveis
+
+velocidadeAtual = velocidadeInicial // Inicializa a velocidade atual com a velocidade inicial
+tempoCorrida = 0 // Inicializa o tempo de corrida como zero
+
+enquanto distanciaCorrida > 0 e tempoCorrida <= tempoMaximo:
+    velocidadeAtual = velocidadeAtual + aceleracao // Aumenta a velocidade atual de acordo com a aceleração
+    Se velocidadeAtual > velocidadeMaxima:
+        velocidadeAtual = velocidadeMaxima // Limita a velocidade atual à velocidade máxima permitida
+    distanciaCorrida = distanciaCorrida - velocidadeAtual // Reduz a distância restante com base na velocidade atual
+    tempoCorrida = tempoCorrida + 1 // Incrementa o tempo de corrida em 1 segundo
+fim enquanto
+
+retornar tempoCorrida // Retorna o tempo que o carro leva para completar a corrida
+
+fim
+
 ```
-
-
 ______
 
 **10)** Uma matriz é uma coleção bidimensional de elementos, organizados em linhas e colunas. A seguir, é fornecida a implementação da função SomaDeMatrizes(matrizA, matrizB), que calcula a soma de duas matrizes. Sua tarefa é implementar uma função semelhante, porém que realize a multiplicação de duas matrizes.
@@ -334,4 +350,40 @@ matrizB <- [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
 matrizSoma <- SomaDeMatrizes(matrizA, matrizB)
 Escrever("Soma das matrizes:")
 ImprimirMatriz(matrizSoma)
+```
+
+```
+Função MultiplicaMatrizes(matrizA, matrizB):
+    // Definição inicial de variáveis
+    linhasA <- tamanho(matrizA)
+    colunasA <- tamanho(matrizA[0])  // Número de colunas da matrizA
+    linhasB <- tamanho(matrizB)
+    colunasB <- tamanho(matrizB[0])  // Número de colunas da matrizB
+
+    // Verificação se as matrizes podem ser multiplicadas
+    se colunasA ≠ linhasB então:
+        retornar "As matrizes não podem ser multiplicadas. O número de colunas em matrizA deve ser igual ao número de linhas em matrizB."
+    senão:
+        matrizResultado <- novaMatriz(linhasA, colunasB) // Inicializa uma matriz vazia com tamanho definido para guardar os valores a multiplicação
+
+        para i de 0 até (linhasA - 1) faça:
+            para j de 0 até (colunasB - 1) faça:
+                soma <- 0
+                para k de 0 até (linhasA - 1) faça:
+                    soma <- soma + matrizA[i][k] * matrizB[k][j]
+                matrizResultado[i][j] <- soma
+
+        retornar matrizResultado
+
+```
+
+```
+para i de 0 até (linhasA - 1) faça:
+    para j de 0 até (colunasB -1) faça:
+        soma <- 0
+        para k de 0 até (linhasA - 1) faça:
+            soma <- soma + matrizA[i][k] * matrizB[k][j]
+        matrizResultante[i][j] <- soma
+
+retornar  matrizResultante
 ```
