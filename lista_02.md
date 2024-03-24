@@ -378,6 +378,8 @@ Função MultiplicaMatrizes(matrizA, matrizB):
 ```
 
 ```
+Treino extra / igual em cima
+--------------------------------------------------------
 para i de 0 até (linhasA - 1) faça:
     para j de 0 até (colunasB -1) faça:
         soma <- 0
